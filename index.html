@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Changer</title>
+    <style>
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            padding: 15px;
+            width: 220px;
+            background-color: #f9f9f9;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 0;
+        }
+
+
+        h1 {
+            font-size: 18px;
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+        }
+
+
+        input[type="color"] {
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            background: #fff;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        input[type="color"]:focus {
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+            outline: none;
+        }
+
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.03);
+        }
+
+        button:active {
+            background-color: #3e8e41;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+<h1>Change Colors</h1>
+<label for="textColor">Text Color:</label>
+<input type="color" id="textColor">
+<br><br>
+<label for="bgColor">Background Color:</label>
+<input type="color" id="bgColor">
+<br><br>
+<button id="applyColors">Apply</button>
+<script src="popup.js"></script>
+</body>
+</html>
+
+
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <title>Color Changer</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            padding: 10px;-->
+<!--            width: 200px;-->
+<!--        }-->
+<!--        label {-->
+<!--            display: block;-->
+<!--            margin-top: 10px;-->
+<!--        }-->
+<!--        button {-->
+<!--            margin-top: 20px;-->
+<!--            padding: 5px 10px;-->
+<!--            background-color: #4CAF50;-->
+<!--            color: white;-->
+<!--            border: none;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+<!--        button:hover {-->
+<!--            background-color: #45a049;-->
+<!--        }-->
+
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Change Colors</h1>-->
+<!--<label for="textColor">Text Color:</label>-->
+<!--<input type="color" id="textColor">-->
+<!--<br><br>-->
+<!--<label for="bgColor">Background Color:</label>-->
+<!--<input type="color" id="bgColor">-->
+<!--<br><br>-->
+<!--<button id="applyColors">Apply</button>-->
+<!--<script src="popup.js"></script>-->
+<!--</body>-->
+<!--</html>-->
